@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Notes App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="styles/notes.css" rel="stylesheet" />
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="bio.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                     <li><a href="tasks.html">Tasks</a></li>
+                </ul>
+            </nav>
+        </header>
+    </head>
+    <body>
+        <main>
+            <h1>My Notes</h1>
+            <div>Built with HTML, CSS, and JavaScript to showcase dynamic form handling and DOM updates.</div>
+            <form id="noteForm">
+                <label for ="noteInput">Add a note: </label>
+                <input type="text" id="noteInput" placeholder="Enter your notes here" required>
+                <button type="submit">Add Note</button>
+                <button type="button" id="clear">Clear All</button>
+                <button type="button" id="removeLast">Remove Last Item</button>
+            </form>
+            <ul id="noteList" ></ul>
+        </main>
+        <script src="notes.js"></script>
+        <footer>
+            <ul>
+               <li><a href="https://twitter.com">Twitter</a></li>
+               <li><a href="https://linkedin.com">LinkedIn</a></li>
+           </ul>
+           <p>2025 - Connect with Me</p>
+       </footer>
+    </body>
+</html>

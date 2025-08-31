@@ -5,19 +5,30 @@
   --main-color: pink;
 }
 
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
 h1 {
-  color: red;
-  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  color: #1E90FF;
   text-align: center;
 }
 
 main {
-  background-color: var(--bg-color);
+  margin: 0 45px;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+
+  color: #333;
+}
+
+p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
 }
 
 form {
@@ -26,7 +37,11 @@ form {
   flex-direction: column;
   align-items: flex-start;
   align-content: space-evenly;
-
+  border-radius: 8px;
+  background: #F5F5F5;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 input {
@@ -40,7 +55,7 @@ textarea {
   margin: var(--input-margin);
 }
 
-button {
+#submit {
   background-color: #007BFF;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -64,7 +79,7 @@ button {
   }
 }
 
-button:hover {
+#submit:hover {
   background-color: aquamarine;
   border: 2px solid #000;
   /* transform: scale(1.1);
@@ -73,13 +88,86 @@ button:hover {
   /* Slight zoom */
 }
 
-nav a:hover {
-  color: #007BFF;
+.navBar {
+  color: #353e8d;
   text-decoration: underline;
+
 }
 
 input:focus {
   outline: none;
   border-color: var(--main-color);
   box-shadow: 0 0 5px var(--main-color);
+}
+
+.fab.fa-x-twitter::before {
+  font-family: "Font Awesome 6 Brands" !important;
+  content: "\e61b" !important;
+}
+
+.social-icons a {
+  display: inline-block;
+  gap: 50px;
+  font-size: 28px;
+  color: #7b7c7f;
+  padding: 10px;
+
+
+}
+
+
+
+.social-icons a:hover {
+  color: #0077b5;
+
+  transform: scale(1.2);
+}
+
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .experience-row {
+    flex-direction: column;
+  }
+
+  .experience-year {
+    margin-bottom: 10px;
+  }
+}
+
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.resume-table th,
+.resume-table td {
+  border: 1px solid #ccc;
+  padding: 16px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.resume-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.resume-table h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.resume-table ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.resume {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }

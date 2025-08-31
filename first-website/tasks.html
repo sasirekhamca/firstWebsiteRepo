@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<html>
+    <head>
+        <title>My Tasks App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="styles/tasks.css" rel="stylesheet" />
+                
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="Bio.html">About Me</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h3>Latest News</h3>
+  <div id="news-item"></div> 
+    </head>
+    <body>
+        <main>
+            <h1>My Tasks</h1>
+            <div>Built with HTML, CSS, and JavaScript to manage tasks dynamically.</div>
+            <form id="tasksForm">
+                <label for ="taskInput">Add a task: </label>
+                 <input type="text" id="taskInput" placeholder="Enter your task" required>
+                <button type="submit">Add Task</button>
+                <button type="button" id="clearTasks">Clear All</button>
+            </form>
+            <div id="filterButtons">
+                <button type="button" id="filterAll">Show All</button>
+                <button type="button" id="filterDone">Show Done</button>
+                <button type="button" id="filterNotDone">Show Not Done</button>
+            </div>
+            <ul id="tasksList"></ul>
+            <p id="taskCount"> Total Tasks: 0</p>
+        </main>
+          <script src="tasks.js"></script> 
+        <footer>
+            <ul>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+            </ul>
+            <p>2025 - Connect with Me</p>
+        </footer>
+        
+    </body>
+</html>

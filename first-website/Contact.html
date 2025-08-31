@@ -3,56 +3,58 @@
      <head>       
         <link href="styles/style.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<header>      
-<nav>
-
-            
-      <ul>
-        <li><a href="index1.html">Home</a></li>
-        <li><a href="bio.html">About Me</a></li>
-      </ul>
-    </nav>
-</header></head> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Contact Page</title>
+        <header>      
+            <nav>
+                <ul>
+                    <li><a class="navBar" href="index1.html">Home</a></li>
+                    <li><a class="navBar" href="bio.html">About Me</a></li>
+                    <li><a class="navBar" href="notes.html">Notes</a></li>
+                     <li><a class="navBar"  href="tasks.html">Tasks</a></li>
+                      <li><a class="navBar" href="courses.html">Courses</a></li>
+                </ul>
+            </nav>
+        </header>
+    </head> 
     <body>
         <main>
             <h1>Get in Touch</h1>
-            <form target="_blank" action="post">
+                 <form id="myForm">
                 <fieldset>
                     <legend>Your Message : </legend>
-                <p>
-                <label for="name">Name : </label>
-                    <input type="text" id="name" name="name" placeholder="your name" required>
-
-                
-                </p>
-                <p>
-                <label for ="email"> Email Id : </label>
-                    <input type="email" id="email" name="email" placeholder="your email Id">
-                
-                </p>
-                <P>
-                    <label for="phone : "> Phone : </label>
-                    <input type="tel" id="phone" name="phone" placeholder="your contact number" />
-                </p>
-                <p>
-                <label for ="message">Your message : </label>
-                    <textarea id="message" name="message"></textarea>
-
-                
-                </p>
-                <button type="submit">Send your message</button>
+                    <p>
+                        <label for="name">Name : </label>
+                        <input type="text" id="name" name="name" placeholder="your name" required>
+                    </p>
+            
+                    <p>
+                        <label for ="email"> Email Id : </label>
+                        <input type="email" id="email" name="email" placeholder="your email Id">
+                    </p>
+                    <p>
+                        <label for="phone"> Phone : </label>
+                        <input type="tel" id="phone" name="phone" placeholder="your contact number" />
+                    </p>
+                    <p>
+                        <label for ="message">Your message : </label>
+                        <textarea id="message" name="message"></textarea>
+                    </p>
+                    <button type="submit" id="submit">Send your message</button>
                 </fieldset>
             </form>
-            
-              </main>
+            <script src="script.js"></script>
+        </main>
         <footer>
-             <ul>
-    <li><a href="https://twitter.com">Twitter</a></li>
-    <li><a href="https://linkedin.com">LinkedIn</a></li>
-  </ul>
-            <p>2025 - Connect with Me</p>
-        </footer>
-    </body>
+    <div class="social-icons">
+       <a class="a-icons" href="https://x.com/sasi_inimai" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a class="a-icons" href="https://www.linkedin.com/in/sasi-rekha-279338307/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+
+        <a  class="a-icons" href="https://github.com/sasirekhamca" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+     </footer>
+      <body>
 </html>

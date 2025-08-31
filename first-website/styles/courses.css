@@ -1,0 +1,114 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    /* text-align: center; */
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: indigo;
+    /* indigo to distinguish from Notes App */
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+
+div {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#courseForm {
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    line-height: 34px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: indigo;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+button:hover {
+    background: rgb(145, 88, 185);
+
+}
+
+#courseList {
+    list-style: none;
+    padding: 0;
+    width: auto;
+}
+
+footer {
+
+    margin-top: 20px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    #taskForm {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
+
+#filterButtons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#filterAll,
+#filterComplete,
+#filterInProgress {
+    background: #555;
+}
+
+#filterAll:hover,
+#filterComplete:hover,
+#filterInProgress:hover {
+    background: #333;
+}

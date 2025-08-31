@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Courses App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="styles/courses.css" rel="stylesheet" />
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="Bio.html">About Me</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                </ul>
+            </nav>
+        </header>
+    </head>
+    <body>
+        <main>
+            <h1>My Courses</h1>
+             <div>Built with HTML, CSS, and JavaScript to manage tasks dynamically.</div>
+             <form id="courseForm">
+                <label for="courseName">Add a Course: </label>
+                <input type="text" id="courseName" placeholder="Enter the course name" required>
+                <label for ="platform">Platform: </label>
+                <input type="text" id="platform" placeholder="Enter the platform name" required>
+                <label for="progressRange">Progress: </label>
+                <input type="range" id="progressRange" min="0" max="100" value="0">
+                <button type="submit">Add Course</button>
+             </form>
+             <div id="filterButtons">
+                <button type="button" id="filterAll">Show All</button>
+              
+                <button type="button" id="filterInProgress">Show In Progress</button>
+                <button type="button" id="filterComplete">Show Completed</button>
+            </div>
+            <ul id="courseList">
+            </ul>
+           
+        </main>
+         <script src="courses.js"></script>
+         <footer>
+            <ul>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+            </ul>
+            <p>2025 - Connect with Me</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,194 @@
+/* tasks.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    /* text-align: center; */
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #228B22;
+    /* Green to distinguish from Notes App */
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+
+div {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#taskForm {
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    line-height: 34px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #228B22;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+button:hover {
+    background: #1B6B1B;
+
+}
+
+#taskCounter {
+    font-weight: bold;
+    color: #228B22;
+    margin: 10px 0;
+}
+
+#tasksList {
+    list-style: none !important;
+    padding: 0;
+    width: auto;
+}
+
+/*
+#taskList li {
+    background: #e6f4e6;
+    /* Light green background */
+/* padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #228B22;
+    border-radius: 4px;
+    list-style: none !important;
+}
+*/
+#taskList li:hover {
+    background: #d0e8d0;
+    margin-top: 20px;
+}
+
+footer {
+
+    margin-top: 20px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    #taskForm {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
+
+#filterButtons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#filterAll,
+#filterDone,
+#filterNotDone {
+    background: #555;
+}
+
+#filterAll:hover,
+#filterDone:hover,
+#filterNotDone:hover {
+    background: #333;
+}
+
+#news-item {
+    /* margin: 20px;
+     padding: 15px; */
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+#news-item h2 {
+    margin: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+#news-item p {
+    margin: none;
+    color: #555;
+}
+
+#news-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#news-item a:hover {
+    text-decoration: underline;
+}
+
+#news-item .error {
+    color: red;
+    font-weight: bold;
+}
+
+#news-item.loading::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #228B22;
+    /* Green to distinguish from Notes App */
+    text-align: center;
+}

@@ -169,22 +169,7 @@ footer {
     font-weight: bold;
 }
 
-#news-item.loading::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #007bff;
-    border-top-color: transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 h3 {
     font-family: 'Montserrat', sans-serif;
